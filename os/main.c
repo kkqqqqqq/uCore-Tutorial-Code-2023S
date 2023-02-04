@@ -14,11 +14,17 @@ void clean_bss()
 void main()
 {
 	clean_bss();
+        
 	proc_init();
+	
 	loader_init();
+	
 	trap_init();
+	
 	timer_init();
+	
 	run_all_app();
+	
 	infof("start scheduler!");
 	scheduler();
 }
